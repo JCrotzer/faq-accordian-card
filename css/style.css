@@ -8,5 +8,163 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)); 
 }
 
+.card {
+    width: 450px;
+    height: 100%;
+    background-color: white;
+    margin: 200px auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-img, .cube {
+    display: none;
+}
+
+.top-img {
+    width: 85%;
+    margin: -170px 0 0 35px;
+    display: block;
+}
+
+.image {
+    height: 200px; 
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position:top 10px left 50px;
+    background-size: 80%;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 30px;
+}
+
+.content h1 {
+    color: hsl(238, 29%, 16%);
+    font-size: 32px;
+    margin: 10px auto;
+    /* position: relative;  */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 40px;
+    
+}
+
+li {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    margin-top: 15px;
+    padding-bottom: 30px;
+}
+
+li span {
+    color: hsl(240, 6%, 50%);
+    font-size: 16px;
+}
+
+li span:hover {
+    color: hsl(14, 88%, 65%);
+    font-weight: bold;
+}
+
+li p {
+    color:hsl(238, 15%, 68%); 
+    font-size: 14px;
+    text-align: start;
+    margin: 0 40px;
+    line-height: 15px;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+details[open] span {
+    font-weight: bold;
+    color:hsl(238, 29%, 16%);
+}
+
+details[open] img {
+    transform: rotate(180deg);
+}
+
+@media screen  and (min-width : 820px){
+    
+    .card {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        margin: 100px 100px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* position: relative; */
+    }
+
+    .image {
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: top -150px right -5px;
+        background-size: 130%;
+        width: 600px;
+        height: 600px; 
+        margin: -10px 0 0 -200px;
+        
+        overflow: hidden;
+    }
+
+    .top-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 75%;
+        margin: 100px 0 0 130px;
+        /* overflow: hidden; */
+        position: relative;
+    }
+    
+    .card {
+        overflow: hidden;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        line-height: 30px;
+        margin: auto;
+    }
+
+    .content h1 {
+        margin: 10px 0 20px 63px;
+    }
+
+    li {
+        width: 450px;
+        padding-bottom: 10px;
+    }
+
+    .cube {
+        display: initial;
+        position: absolute;
+        top: 51%;
+        left: -30px;
+        z-index: 1;
+    }
+}
