@@ -164,7 +164,7 @@ details[open] img {
         display: initial;
         position: absolute;
         top: 40%;
-        left: -30px;
+        left: -20px;
         z-index: 1;
     }
 }
