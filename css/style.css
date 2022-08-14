@@ -163,7 +163,7 @@ details[open] img {
     .cube {
         display: initial;
         position: absolute;
-        top: 42%;
+        top: 41%;
         left: 10px;
         z-index: 1;
     }
