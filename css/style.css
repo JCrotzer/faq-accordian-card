@@ -103,14 +103,15 @@ details[open] img {
 @media screen  and (min-width : 600px) {
     
     .card {
-        width: 1150px;
+        width: 1000px;
         height: 100%;
         background-color: white;
-        margin: 100px 100px;
+        margin: 100px auto;
         border-radius: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         
     }
 
@@ -162,7 +163,7 @@ details[open] img {
         display: initial;
         position: absolute;
         top: 41%;
-        left: 10px;
+        left: 45px;
         z-index: 1;
     }
 }
