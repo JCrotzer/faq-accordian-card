@@ -163,7 +163,7 @@ details[open] img {
         display: inline-block;
         position: absolute;
         top: 40%;
-        left: 5%;
+        left: 15%;
         z-index: 1;
     }
 }
