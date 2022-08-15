@@ -53,7 +53,6 @@ body {
     color: hsl(238, 29%, 16%);
     font-size: 32px;
     margin: 10px auto;
-    /* position: relative;  */
 }
 
 ul {
@@ -101,10 +100,10 @@ details[open] img {
     transform: rotate(180deg);
 }
 
-@media screen  and (min-width : 600px){
+@media screen  and (min-width : 600px) {
     
     .card {
-        width: 100%;
+        width: 1150px;
         height: 100%;
         background-color: white;
         margin: 100px 100px;
@@ -112,7 +111,7 @@ details[open] img {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        /* position: relative; */
+        
     }
 
     .image {
@@ -134,7 +133,6 @@ details[open] img {
         display: block;
         width: 75%;
         margin: 100px 0 0 130px;
-        /* overflow: hidden; */
         position: relative;
     }
     
